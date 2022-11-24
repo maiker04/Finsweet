@@ -1,0 +1,94 @@
+@import url(styles.css);
+
+.body__content__blog{
+    padding: 94px 80px;
+    background-color: var(--container-bg-color2);
+}
+.body__blog__text {
+    max-width: 625px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.body__blog__text__posted {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 0px;
+    line-height: 20px;
+}
+
+.body__blog__text h2 {
+    margin-top: 20px;
+    margin-bottom: 16px;
+    font-weight: var(--font-w700);
+    letter-spacing: -2px;
+    line-height: 49px;
+    font-size: 36px;
+}
+.body__front-page__text__author {
+    margin-top: 0px;
+}
+
+.body__blog__text__button {
+    background-color: var(--body-btn-bg-color);
+    color: var(--header-btn-color);
+}
+
+.body__blog__text__description {
+    max-width: 600px;
+    line-height: 28px;
+    margin-top: 0px;
+    margin-bottom: 48px;
+}
+.body__content__blog__box{
+    padding: 64px 80px 0px;
+}
+.body__content__blog__box h1{
+    font-weight: var(--font-w700);
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(109, 110, 118, 0.32);
+}
+.body__content__blog__box__post{
+    padding: 64px 0px 0px;
+}
+
+.body__content__blog__box__post img{
+    margin-right: 32px;
+}
+.body__content__blog__box__post__info p.color-text-purple{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    font-weight: var(--font-w600);
+}
+.body__content__blog__box__post__info h2{
+    font-size: 32px;
+    font-weight: var(--font-w700);
+    max-width: 625px;
+    margin-bottom: 16px;
+}
+.body__content__blog__box__post__info p:last-child{
+    max-width: 625px;
+} 
+.body__content__blog__box__post button.button-prev, .body__content__blog__box__post button.button-next{
+    text-decoration: none;
+    color: var(--color-black);
+    font-size: 24px;
+    font-weight: var(--font-w700);
+    letter-spacing: -1px;
+    line-height: 40px;
+    background-color: white;
+    border: none;
+    font-family: 'Sen', sans-serif;
+}
+.body__content__blog__box__post button.button-prev{
+    margin-right: 17px;
+}
+.body__content__blog__box .margin-bottom-category{
+    margin-bottom: 48px;
+    font-weight: var(--font-w700);
+    letter-spacing: -2px;
+    line-height: 48px;
+    font-size: 36px;
+}

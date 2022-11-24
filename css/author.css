@@ -1,0 +1,60 @@
+@import url(styles.css);
+
+.body__content__blog.body__author{
+    padding: 128px 208px;
+}
+.body__content__blog.body__author img{
+    margin-right: 32px;
+}
+.body__author__text {
+    max-width: 669px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.body__author__text h1{
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: -2px;
+    font-weight: var(--font-w700);
+    margin-bottom: 24px;
+}
+.body__author__text .footer__social-media img{
+    margin-right: 16px;
+    margin-bottom: 0px;
+}
+.body__author__text .body__content__description{
+    margin-bottom: 24px;
+}
+.author{
+    padding-left: 208px;
+    padding-right: 208px;
+    margin-top: -24px;
+}
+.author .color1 {
+    background-color: var(--color-yellow);
+    width: 80%;
+    height: 23px;
+}
+
+.author .color2 {
+    background-color: var(--color-purple);
+    width: 20%;
+    height: 23px;
+}
+.body__content__author__box{
+    padding: 128px 208px;
+}
+
+.body__content__author__box h1{
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: -2px;
+    font-weight: var(--font-w700);
+}
+.navbar-header {
+    display: none;
+}
+.show {
+    display: flex !important;
+}

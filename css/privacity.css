@@ -1,0 +1,107 @@
+@import url(styles.css);
+@import url(mediaQ.css);
+
+.body__privacity__text h1{
+    font-weight: var(--font-w700);
+    line-height: 64px;
+    font-size: 48px;
+    letter-spacing: -2px;
+    color: var(--color-black);
+}
+.body__content__privacity{
+    padding: 128px 80px;
+}
+.body__content__privacity h1{
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: -2px;
+    font-weight: var(--font-w700);
+    max-width: 768px;
+    margin: auto;
+    margin-bottom: 24px;
+}
+.body__content__privacity h2 {
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    font-weight: var(--font-w700);
+    max-width: 768px;
+    margin: auto;
+    margin-bottom: 24px;
+    margin-top: 32px;
+}
+.body__content__privacity p {
+    max-width: 768px;
+    margin: auto;
+    color: var(--color-grey);
+    line-height: 28px;
+}
+.body__content__privacity__box{
+    max-width: 768px;
+    margin: auto;
+    background-color: var(--color-purple);
+    padding: 48px 64px;
+    margin-top: 64px;
+}
+.body__content__privacity__box div{ 
+    width: 47%;
+    text-align: start;
+}
+.body__content__privacity__box div p:first-child{
+    font-size: 14px;
+    color: rgba(255,255,255,0.6);
+    text-transform: capitalize;
+    font-weight: var(--font-w400);
+    letter-spacing: 0px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.body__content__privacity__box div h5{
+    color: var(--color-white);
+    text-transform: capitalize;
+    font-weight: 900;
+    line-height: 32px;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+
+}
+.body__content__privacity p:first-child{
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    max-width: 768px;
+    margin: auto;
+    margin-bottom: 12px;
+    color: var(--color-black);
+}
+.body__content__privacity p:last-child {
+    font-size: 16px;
+    color: rgba(255,255,255,0.6);
+    font-weight: var(--font-w400);
+    letter-spacing: 0.2px;
+}
+.body__content__privacity__contact{
+    max-width: 768px;
+    margin: auto;
+    margin-top: 32px;
+}
+.body__content__privacity__contact input, select, textarea{
+    padding: 24px;
+    font-size: 16px !important;
+    margin-bottom: 16px !important;
+    border: 1px solid rgba(109, 110, 118, 0.5);
+    outline: none;
+    color: var(--color-black);
+    appearance: none;
+}
+.body__content__privacity__contact input::placeholder,
+textarea::placeholder{
+    color: var(--color-black);
+}
+.down-select{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    margin-top: -60px;
+    margin-left: -63px;
+}

@@ -1,0 +1,173 @@
+:root {
+    --header-bg-color: #232536;
+    --footer-bg-color: #232536;
+    --footer-color: rgba(255,255,255, 0.7);
+    --header-color: #fff;
+    --header-btn-color: #232536;
+    --header-btn-bg-color: #fff;
+    --body-btn-bg-color: #FFD050;
+    --color-yellow: #FFD050;
+    --color-purple: rgba(89, 46, 169, 1);
+    --color-white: #fff;
+    --color-black: rgba(35, 37, 54, 1);
+    --color-grey:#6D6E76;
+    --container-bg-color:#FBF6EA;
+    --container-bg-color2: #F4F0F8;
+    --container-bg-color3: #F4F4F4;
+    --font-w400: 400;
+    --font-w500: 500;
+    --font-w600: 600;
+    --font-w700: 700;
+}
+body, button, h1, p, a, h2, h3, h4, button, span,ul, li,h5, input, textarea, select{
+    font-family: 'Sen', sans-serif;
+}
+/*header*/
+.header{
+    background-color: var(--header-bg-color);
+    color: var(--header-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 80px;
+    align-items: center;
+}
+.header__links a, .footer__links a{
+    color: var(--header-color);
+    outline: none;
+    text-decoration: none;
+    margin-right: 24px;
+    font-weight: var(--font-w400);
+    font-size: 16px;
+}
+.header__links a:hover,
+.footer__links a:hover {
+    color: var(--color-yellow);
+}
+.header__links__button{
+    background-color: var(--header-btn-bg-color);
+    color: var(--header-btn-color);
+}
+.header__links__button, .body__front-page__text__button{
+    border: none;
+    font-size: 18px;
+    font-weight: var(--font-w700);
+    padding: 16px 48px;
+    width: fit-content;
+    font-family: 'Sen', sans-serif;
+}
+/*header*/
+/*front page body*/
+.body__front-page{
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+.body__front-page img{
+    width: 100%;
+}
+.body__front-page__text{
+    width: -webkit-fill-available;
+    height: 100%;
+    background:radial-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6));
+    position: absolute;
+    top: 0;
+    padding: 0px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.body__front-page__text p, .body__front-page__text h1{
+    color: var(--color-white);
+}
+.body__front-page__text__posted{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 0px;
+}
+.body__front-page__text h1{
+    font-size:56px;
+    max-width: 840px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-weight: var(--font-w700);
+}
+.body__front-page__text__author{
+    margin-top: 0px;
+}
+.body__front-page__text__button{
+    background-color: var(--body-btn-bg-color);
+    color: var(--header-btn-color);
+}
+.body__front-page__text__button:hover{
+    background-color: rgba(237, 193, 74);
+}
+.body__front-page__text__description{
+    max-width: 600px;
+    line-height: 28px;
+    margin-top: 0px;
+    margin-bottom: 48px;
+}
+.color-text-yellow{
+    color: var(--color-yellow);
+}
+/*front page body*/
+/*content body*/
+.color-text-purple{
+    color: var(--color-purple);
+}
+.color1{
+    background-color: var(--color-yellow);
+    width: 65%;
+    height: 23px;
+}
+.color2 {
+    background-color: var(--color-purple);
+    width: 20%;
+    height: 23px;
+}
+.footer{
+    padding: 63px 80px 56px;
+    background-color: var(--footer-bg-color);
+    color: var(--color-white);
+}
+.footer>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 54px;
+}
+.footer>div:last-child{
+    margin-bottom: 0px;
+}
+.footer .footer_search{
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 80px 64px;
+    align-items: flex-start;
+}
+input.footer_search__input{
+    border: 1px solid rgba(76, 76, 76, 1);
+    background-color: transparent;
+    padding: 14px 24px;
+    width: 323px;
+    margin-right: 24px;
+    font-size: 18px;
+}
+.footer_search h2{
+    font-size: 36px;
+    max-width: 530px;
+    font-weight: var(--font-w700);
+    line-height: 48px;
+    letter-spacing: -2px;
+}
+.footer__end p{
+    color: var(--footer-color);
+    margin-bottom: 0px;
+    line-height: 28px;
+}
+.footer__social-media img{
+    margin-right: 26px;
+    margin-bottom: 7px;
+}
+.footer__social-media img:last-child{
+    margin-right: 0px;
+}
