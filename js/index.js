@@ -5,31 +5,22 @@ function mostrarOcultar() {
     active.classList.toggle("show");
 
 }
+
+function validator(element) {
+    if (element == null || element.length == 0 || /^\s+$/.test(element)) {
+        return false;
+    }
+    return true;
+}
+
 function Enviar() {
-    var b = true;
-    var formulario = document.getElementById("name").value;
-    var formulario2 = document.getElementById("email").value;
-    var formulario3 = document.getElementById("select").value;
-    var formulario4 = document.getElementById("texta").value;
-
-    if (formulario == null || formulario.length == 0 || /^\s+$/.test(formulario)) {
-        b = false;
-    }
-    if (formulario2 == null || formulario2.length == 0 || /^\s+$/.test(formulario2)) {
-        b = false;
-    }
-    if (formulario3 == null || formulario3.length == 0 || /^\s+$/.test(formulario3)) {
-        b = false;
-    }
-    if (formulario4 == null || formulario4.length == 0 || /^\s+$/.test(formulario4)) {
-        b = false;
+    if (!validator(document.getElementById("name").value) ||
+        !validator(document.getElementById("email").value) ||
+        !validator(document.getElementById("select").value) ||
+        !validator(document.getElementById("texta").value)) {
+        alert("Todos los campos son obligatorios");
+        return;
     }
 
-    if (b == true) {
-        alert("Sus datos fueron enviados");
-        window.location.href = "https://finsweet-beta.vercel.app/contact.html";
-    }
-
-    // console.trace({ formulario, formulario2, formulario3, formulario4 });
-    return b;
+    alert("Sus datos fueron enviados");
 }
