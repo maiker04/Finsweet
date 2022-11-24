@@ -55,7 +55,7 @@
                 </div>
             </div>
             <div class="body__content__privacity__contact">
-                <form method="post" class="d-flex flex-column" onsubmit="Enviar()">
+                <div class="d-flex flex-column">
                     <input type="text" placeholder="Full Name" id="name" required>
                     <input type="email" placeholder="Your Email" id="email" required>
                     <select name="query" id="select" required>
@@ -68,8 +68,8 @@
                         <img src="images/angle-arrow-down_icon-icons.com_73683.svg" class="down-select">
                     </div>
                     <textarea name="description" cols="30" rows="4" placeholder="Message" id="texta" required></textarea>
-                    <button type="submit" class="body__front-page__text__button w-100 fs-4"> Send Message</button>
-                </form>
+                    <button type="button" class="body__front-page__text__button w-100 fs-4" onclick="Enviar()"> Send Message</button>
+                </div>
             </div>
         </div>
     </div>
