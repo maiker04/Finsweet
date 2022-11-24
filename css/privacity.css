@@ -93,6 +93,7 @@
     outline: none;
     color: var(--color-black);
     appearance: none;
+    background-color: white;
 }
 .body__content__privacity__contact input::placeholder,
 textarea::placeholder{
