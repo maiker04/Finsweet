@@ -14,13 +14,24 @@ function validator(element) {
 }
 
 function Enviar() {
-    if (!validator(document.getElementById("name").value) ||
-        !validator(document.getElementById("email").value) ||
-        !validator(document.getElementById("select").value) ||
-        !validator(document.getElementById("texta").value)) {
+    let name = document.getElementById("name");
+    let email = document.getElementById("email");
+    let select = document.getElementById("select");
+    let textarea = document.getElementById("textarea");
+
+    if (!validator(name.value) ||
+        !validator(email.value) ||
+        !validator(select.value) ||
+        !validator(textarea.value)) {
         alert("Todos los campos son obligatorios");
         return;
     }
 
     alert("Sus datos fueron enviados");
+
+    name.value = "";
+    email.value = "";
+    select.value = 1;
+    textarea.value = "";
+
 }
