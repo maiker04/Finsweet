@@ -57,7 +57,9 @@
             <div class="body__content__privacity__contact">
                 <div class="d-flex flex-column">
                     <input type="text" placeholder="Full Name" id="name" required>
+                    <p class="mx-0" id="required-name">* This field is required</p>
                     <input type="email" placeholder="Your Email" id="email" required>
+                    <p class="mx-0" id="required-email">* This field is required</p>
                     <select name="query" id="select" required>
                         <option value="1">Query Related</option>
                         <option value="2">ONE</option>
@@ -67,7 +69,9 @@
                     <div class="w-100 d-flex justify-content-end">
                         <img src="images/angle-arrow-down_icon-icons.com_73683.svg" class="down-select">
                     </div>
+                    <p class="mx-0" id="required-select">* This field is required</p>
                     <textarea name="description" cols="30" rows="4" placeholder="Message" id="textarea" required></textarea>
+                    <p class="mx-0" id="required-descript">* This field is required</p>
                     <button type="button" class="body__front-page__text__button w-100 fs-4" onclick="Enviar()"> Send Message</button>
                 </div>
             </div>

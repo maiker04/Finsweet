@@ -106,3 +106,9 @@ textarea::placeholder{
     margin-top: -60px;
     margin-left: -63px;
 }
+#required-name, #required-email, #required-select, #required-descript{
+    display: none;
+    color: red;
+    font-size: 14px;
+    margin-bottom: 12px;
+}

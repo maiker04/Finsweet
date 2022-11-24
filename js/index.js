@@ -7,10 +7,40 @@ function mostrarOcultar() {
 }
 
 function validator(element) {
+    let name = document.getElementById("name");
+    let email = document.getElementById("email");
+    let select = document.getElementById("select");
+    let textarea = document.getElementById("textarea");
+
+    if (name.value === "") {
+        document.getElementById("required-name").classList.add("show");
+    } else {
+        document.getElementById("required-name").classList.remove("show");
+        document.getElementById("required-name").classList.add("hidden");
+    }
+    if (email.value === "") {
+        document.getElementById("required-email").classList.add("show");
+    } else {
+        document.getElementById("required-email").classList.remove("show");
+        document.getElementById("required-email").classList.add("hidden");
+    }
+    if (select.value === "1") {
+        document.getElementById("required-select").classList.add("show");
+    } else {
+        document.getElementById("required-select").classList.remove("show");
+        document.getElementById("required-select").classList.add("hidden");
+    }
+    if (textarea.value === "") {
+        document.getElementById("required-descript").classList.add("show");
+    } else {
+        document.getElementById("required-descript").classList.remove("show");
+        document.getElementById("required-descript").classList.add("hidden");
+    }
     if (element == null || element.length == 0 || /^\s+$/.test(element)) {
         return false;
+    } else {
+        return true;
     }
-    return true;
 }
 
 function Enviar() {
@@ -19,19 +49,22 @@ function Enviar() {
     let select = document.getElementById("select");
     let textarea = document.getElementById("textarea");
 
+    if (validator(email.value) && /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i.test(email.value)) {
+        alert("Your data was sent correctly");
+    } else {
+        alert("The email address is incorrect " + email.value);
+    }
     if (!validator(name.value) ||
-        !validator(email.value) ||
         !validator(select.value) ||
+        !validator(email.value) ||
         !validator(textarea.value)) {
-        alert("Todos los campos son obligatorios");
+        alert("All fields are required");
         return;
     }
 
-    alert("Sus datos fueron enviados");
-
     name.value = "";
     email.value = "";
-    select.value = 1;
+    select.value = "1";
     textarea.value = "";
 
 }
