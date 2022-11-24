@@ -27,7 +27,9 @@ function Enviar() {
 
     if (b == true) {
         alert("Sus datos fueron enviados");
+        window.location.href = "https://finsweet-beta.vercel.app/contact.html";
     }
+
     // console.trace({ formulario, formulario2, formulario3, formulario4 });
     return b;
 }
