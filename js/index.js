@@ -28,5 +28,6 @@ function Enviar() {
     if (b == true) {
         alert("Sus datos fueron enviados");
     }
+    // console.trace({ formulario, formulario2, formulario3, formulario4 });
     return b;
 }
