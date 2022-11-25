@@ -50,16 +50,34 @@ function Enviar() {
     let textarea = document.getElementById("textarea");
 
     if (validator(email.value) && /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i.test(email.value)) {
-        alert("Your data was sent correctly");
+        console.log(email.value);
     } else {
         alert("The email address is incorrect " + email.value);
+        console.log(email.value);
     }
+
     if (!validator(name.value) ||
         !validator(select.value) ||
         !validator(email.value) ||
         !validator(textarea.value)) {
         alert("All fields are required");
         return;
+    }
+    if (validator(name.value) &&
+        validator(select.value) &&
+        validator(email.value) &&
+        validator(textarea.value) &&
+        /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i.test(email.value)) {
+
+        console.log("entro")
+
+        if (select.value != 1) {
+            alert("your data was sent successfully");
+        } else {
+            alert("All fields are required");
+        }
+    } else {
+        console.log(" no entro")
     }
 
     name.value = "";
